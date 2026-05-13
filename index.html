@@ -1,119 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Armaan Arora | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-    <header>
-        <nav>
-            <h1>Armaan Arora</h1>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#services">What I Can Do</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+    <div class="background-glow"></div>
 
-        <section class="hero">
-            <h2>Computer Science Student & Aspiring Software Developer</h2>
-            <p>
-                I am currently studying Computer Science and building my skills in Java, Python,
-                web development, databases, and full-stack application development.
-            </p>
-            <a href="#projects" class="btn">View My Projects</a>
-        </section>
+    <header class="navbar">
+        <div class="logo">NexaArmaan</div>
+
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
+
+    <section class="hero">
+        <div class="hero-content reveal">
+            <p class="eyebrow">Computer Science Student • Software Developer</p>
+
+            <h1>
+                Hi, I’m <span>Armaan Arora</span>.
+            </h1>
+
+            <p class="hero-description">
+                I’m a Computer Science student focused on Java, Python, backend development,
+                databases, and full-stack projects. I enjoy building applications that solve
+                real problems and help users work more efficiently.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#projects" class="btn primary">View Projects</a>
+                <a href="https://github.com/NexaArmaan" target="_blank" class="btn secondary">GitHub</a>
+                <a href="https://www.linkedin.com/in/armaan-arora09" target="_blank" class="btn secondary">LinkedIn</a>
+            </div>
+        </div>
+
+        <div class="hero-card reveal">
+            <div class="card-header">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+
+            <pre><code>class Developer {
+    name = "Armaan Arora";
+    major = "Computer Science";
+    focus = ["Java", "Python", "Backend", "Web"];
+    goal = "Build better software";
+}</code></pre>
+        </div>
+    </section>
 
     <main>
 
-        <section id="about" class="section">
-            <h2>About Me</h2>
+        <section id="about" class="section reveal">
+            <p class="section-label">About Me</p>
+            <h2>Learning, building, and improving one project at a time.</h2>
+
             <p>
-                Hi, I'm Armaan Arora. I am a Computer Science student pursuing studies in software
-                development, backend systems, web applications, and creating useful technology projects.
-                I have experience working with Java, Python, HTML, CSS, SQL, JavaFX, Django, and GitHub.
+                I am currently studying Computer Science and working on projects that help me grow
+                as a developer. My main interests include software engineering, Java applications,
+                backend development, APIs, databases, and full-stack systems.
             </p>
+
             <p>
-                I am currently improving my skills by working on institutional projects, personal coding projects,
-                and learning more about full-stack development, APIs, databases, and software design.
+                I have worked with Java, JavaFX, Python, HTML, CSS, SQL, Django, GitHub, and
+                database-driven applications. I am always looking to improve my coding skills,
+                build stronger projects, and gain real-world software development experience.
             </p>
         </section>
 
-        <section id="projects" class="section">
-            <h2>Projects</h2>
+        <section id="projects" class="section reveal">
+            <p class="section-label">Selected Work</p>
+            <h2>Projects I’ve worked on</h2>
 
-            <div class="project-card">
-                <h3>FBI Most Wanted Application</h3>
-                <p>
-                    A JavaFX and Django-based application that uses the FBI public API to display wanted
-                    individuals, user accounts, saved targets, and profile information.
-                </p>
-                <a href="https://github.com/NexaArmaan/fugitive-finder" target="_blank">View Repository</a>
+            <div class="projects-grid">
+
+                <article class="project-card">
+                    <div class="project-top">
+                        <span class="project-date">2026</span>
+                        <span class="project-tag">JavaFX • Django • API</span>
+                    </div>
+
+                    <h3>FBI Most Wanted Application</h3>
+
+                    <p>
+                        A JavaFX desktop application connected to a Django backend that uses the FBI
+                        public API to display wanted individuals, support user accounts, and save
+                        selected targets.
+                    </p>
+
+                    <div class="tech-stack">
+                        <span>Java</span>
+                        <span>JavaFX</span>
+                        <span>Django</span>
+                        <span>REST API</span>
+                    </div>
+
+                    <a href="https://github.com/NexaArmaan/fugitive-finder" target="_blank">View Repository →</a>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-top">
+                        <span class="project-date">2026</span>
+                        <span class="project-tag">Desktop App • Database</span>
+                    </div>
+
+                    <h3>Player Statistics Tracker</h3>
+
+                    <p>
+                        A database-backed JavaFX application that lets users track gaming statistics,
+                        including wins, losses, kills, deaths, and performance history.
+                    </p>
+
+                    <div class="tech-stack">
+                        <span>Java</span>
+                        <span>JavaFX</span>
+                        <span>SQL</span>
+                        <span>Derby DB</span>
+                    </div>
+
+                    <a href="https://github.com/NexaArmaan/CSC311_PlayerStatsTracker" target="_blank">View Repository →</a>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-top">
+                        <span class="project-date">2026</span>
+                        <span class="project-tag">Research • Debugging</span>
+                    </div>
+
+                    <h3>Time-Travel Debugger in Java</h3>
+
+                    <p>
+                        A Java prototype that records program execution and lets users move forward
+                        and backward through variable states using snapshots and delta tracking.
+                    </p>
+
+                    <div class="tech-stack">
+                        <span>Java</span>
+                        <span>Parser</span>
+                        <span>Execution Trace</span>
+                        <span>Debugging</span>
+                    </div>
+
+                    <a href="https://github.com/NexaArmaan/TimeTravelDebugger" target="_blank">View Repository →</a>
+                </article>
+
             </div>
-
-            <div class="project-card">
-                <h3>Player Statistics Tracker</h3>
-                <p>
-                    A JavaFX desktop application that allows users to track gaming statistics such as wins,
-                    losses, kills, deaths, and performance history using a database.
-                </p>
-                <a href="https://github.com/NexaArmaan/CSC311_PlayerStatsTracker" target="_blank">View Repository</a>
-            </div>
-
-            <div class="project-card">
-                <h3>Time-Travel Debugger in Java</h3>
-                <p>
-                    A Java-based debugging prototype that records program execution states and allows users
-                    to move forward and backward through code execution using snapshots and deltas.
-                </p>
-                <a href="https://github.com/NexaArmaan/TimeTravelDebugger" target="_blank">View Repository</a>
-            </div>
-
         </section>
 
-        <section id="services" class="section">
-            <h2>What I Can Do</h2>
+        <section id="skills" class="section reveal">
+            <p class="section-label">Skills</p>
+            <h2>Technologies I’m learning and using</h2>
+
+            <div class="skills-list">
+                <span>Java</span>
+                <span>Python</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>SQL</span>
+                <span>JavaFX</span>
+                <span>Django</span>
+                <span>GitHub</span>
+                <span>REST APIs</span>
+                <span>Database Design</span>
+                <span>SceneBuilder</span>
+                <span>Backend Development</span>
+            </div>
+        </section>
+
+        <section id="services" class="section reveal">
+            <p class="section-label">What I Can Do</p>
+            <h2>Ways I can help or contribute</h2>
 
             <div class="services-grid">
+
+                <div class="service-box">
+                    <h3>Web Development</h3>
+                    <p>
+                        Build clean and responsive websites using HTML, CSS, JavaScript, and backend tools.
+                    </p>
+                </div>
+
                 <div class="service-box">
                     <h3>Java Applications</h3>
-                    <p>I can build desktop applications using Java, JavaFX, SceneBuilder, and databases.</p>
+                    <p>
+                        Create desktop applications using Java, JavaFX, SceneBuilder, and database connections.
+                    </p>
                 </div>
 
                 <div class="service-box">
                     <h3>Backend Development</h3>
-                    <p>I am learning backend development using Django, APIs, databases, and cloud deployment.</p>
+                    <p>
+                        Work with Django, APIs, data storage, authentication, and server-side logic.
+                    </p>
                 </div>
-                
+
                 <div class="service-box">
-                    <h3>Web Development</h3>
-                    <p>I can create simple websites using HTML, CSS, JavaScript, and backend tools.</p>
+                    <h3>Programming Tutoring</h3>
+                    <p>
+                        Help beginners understand programming concepts, Java, Python, and problem-solving.
+                    </p>
                 </div>
+
             </div>
         </section>
 
-        <section id="contact" class="section">
-            <h2>Contact</h2>
+        <section id="contact" class="section contact-section reveal">
+            <p class="section-label">Contact</p>
+            <h2>Let’s connect</h2>
+
             <p>
-                You can connect with me professionally through LinkedIn or view my work on GitHub.
+                I’m always open to learning opportunities, internships, projects, and professional connections.
             </p>
 
             <div class="contact-links">
                 <a href="https://github.com/NexaArmaan" target="_blank">GitHub</a>
                 <a href="https://www.linkedin.com/in/armaan-arora09" target="_blank">LinkedIn</a>
+                <a href="mailto:armaanarora880@gmail.com">Email</a>
             </div>
         </section>
 
     </main>
 
     <footer>
-        <p>&copy; 2026 Armaan Arora. All rights reserved.</p>
+        <p>© 2026 Armaan Arora. Built with HTML, CSS, and GitHub Pages.</p>
     </footer>
+
+    <script>
+        const revealElements = document.querySelectorAll(".reveal");
+
+        function revealOnScroll() {
+            revealElements.forEach((element) => {
+                const windowHeight = window.innerHeight;
+                const elementTop = element.getBoundingClientRect().top;
+                const revealPoint = 120;
+
+                if (elementTop < windowHeight - revealPoint) {
+                    element.classList.add("active");
+                }
+            });
+        }
+
+        window.addEventListener("scroll", revealOnScroll);
+        window.addEventListener("load", revealOnScroll);
+    </script>
 
 </body>
 </html>
